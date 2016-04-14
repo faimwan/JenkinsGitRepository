@@ -1,0 +1,33 @@
+Buildfile: C:\DevOps\eclipseWorkSpace\AntJenkinsProject\build.xml
+
+setClassPath:
+
+init:
+
+clean:
+   [delete] Deleting directory C:\DevOps\eclipseWorkSpace\AntJenkinsProject\build
+
+compile:
+     [echo] making directory...
+    [mkdir] Created dir: C:\DevOps\eclipseWorkSpace\AntJenkinsProject\build
+     [echo] classpath------: C:\DevOps\jar\SaxonLiaison.jar:C:\DevOps\jar\appium_java-client-3.4.0.jar:C:\DevOps\jar\gson-2.2.4-javadoc.jar:C:\DevOps\jar\gson-2.2.4-sources.jar:C:\DevOps\jar\gson-2.2.4.jar:C:\DevOps\jar\java-client-3.4.0-javadoc.jar:C:\DevOps\jar\java-client-3.4.0-sources.jar:C:\DevOps\jar\java-client-3.4.0.jar:C:\DevOps\jar\jcommander-1.48.jar:C:\DevOps\jar\saxon-8.7.jar:C:\DevOps\jar\testng-6.9.6.jar
+     [echo] compiling...
+    [javac] C:\DevOps\eclipseWorkSpace\AntJenkinsProject\build.xml:52: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to C:\DevOps\eclipseWorkSpace\AntJenkinsProject\build
+    [javac] C:\DevOps\eclipseWorkSpace\AntJenkinsProject\src\myPackage\SmokeTest.java:5: error: package org.openqa.selenium does not exist
+    [javac] import org.openqa.selenium.WebDriver;
+    [javac]                           ^
+    [javac] C:\DevOps\eclipseWorkSpace\AntJenkinsProject\src\myPackage\SmokeTest.java:6: error: package org.openqa.selenium.firefox does not exist
+    [javac] import org.openqa.selenium.firefox.FirefoxDriver;
+    [javac]                                   ^
+    [javac] C:\DevOps\eclipseWorkSpace\AntJenkinsProject\src\myPackage\SmokeTest.java:15: error: cannot find symbol
+    [javac] 		WebDriver driver = new FirefoxDriver();
+    [javac] 		^
+    [javac]   symbol:   class WebDriver
+    [javac]   location: class SmokeTest
+    [javac] C:\DevOps\eclipseWorkSpace\AntJenkinsProject\src\myPackage\SmokeTest.java:15: error: cannot find symbol
+    [javac] 		WebDriver driver = new FirefoxDriver();
+    [javac] 		                       ^
+    [javac]   symbol:   class FirefoxDriver
+    [javac]   location: class SmokeTest
+    [javac] 4 errors
